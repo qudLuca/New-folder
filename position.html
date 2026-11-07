@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="position.js" defer></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <style>
+      .num {
+        transform: rotate(calc(var(--n) * 30deg)) translateY(-110px)
+          rotate(calc(var(--n) * -30deg));
+      }
+    </style>
+  </head>
+  <body
+    class="bg-[#f5f5f5] flex flex-col gap-12 justify-center items-center h-vh-screen"
+  >
+    <h1 class="text-3xl font-bold mt-10">A WORKING CLOCK</h1>
+    <main
+      class="w-[280px] h-[280px] rounded-full border-8 border-black relative flex justify-center items-center h-vh-screen m-auto"
+    >
+      <div
+        class="num [--n:1] absolute text-center top-[50%] left-[50%] w-[30px] h-[30px] -m-[15px] font-bold text-xl font-sans-serif"
+      >
+        1
+      </div>
+      <div
+        class="num [--n:2] absolute text-center top-[50%] left-[50%] w-[30px] h-[30px] -m-[15px] font-bold text-xl font-sans-serif"
+      >
+        2
+      </div>
+      <div
+        class="num [--n:3] absolute text-center top-[50%] left-[50%] w-[30px] h-[30px] -m-[15px] font-bold text-xl font-sans-serif"
+      >
+        3
+      </div>
+      <div
+        class="num [--n:4] absolute text-center top-[50%] left-[50%] w-[30px] h-[30px] -m-[15px] font-bold text-xl font-sans-serif"
+      >
+        4
+      </div>
+      <div
+        class="num [--n:5] absolute text-center top-[50%] left-[50%] w-[30px] h-[30px] -m-[15px] font-bold text-xl font-sans-serif"
+      >
+        5
+      </div>
+      <div
+        class="num [--n:6] absolute text-center top-[50%] left-[50%] w-[30px] h-[30px] -m-[15px] font-bold text-xl font-sans-serif"
+      >
+        6
+      </div>
+      <div
+        class="num [--n:7] absolute text-center top-[50%] left-[50%] w-[30px] h-[30px] -m-[15px] font-bold text-xl font-sans-serif"
+      >
+        7
+      </div>
+      <div
+        class="num [--n:8] absolute text-center top-[50%] left-[50%] w-[30px] h-[30px] -m-[15px] font-bold text-xl font-sans-serif"
+      >
+        8
+      </div>
+      <div
+        class="num [--n:9] absolute text-center top-[50%] left-[50%] w-[30px] h-[30px] -m-[15px] font-bold text-xl font-sans-serif"
+      >
+        9
+      </div>
+      <div
+        class="num [--n:10] absolute text-center top-[50%] left-[50%] w-[30px] h-[30px] -m-[15px] font-bold text-xl font-sans-serif"
+      >
+        10
+      </div>
+      <div
+        class="num [--n:11] absolute text-center top-[50%] left-[50%] w-[30px] h-[30px] -m-[15px] font-bold text-xl font-sans-serif"
+      >
+        11
+      </div>
+      <div
+        class="num [--n:12] absolute text-center top-[50%] left-[50%] w-[30px] h-[30px] -m-[15px] font-bold text-xl font-sans-serif"
+      >
+        12
+      </div>
+
+      <div
+        id="center"
+        class="fix bottom-[50%] left-[50%] -ml-[6px] -mt-[6px] w-[14px] h-[14px] bg-[black] rounded-full"
+      ></div>
+      <div
+        id="shortHand"
+        class="absolute bottom-[50%] left-[50%] -ml-[5px] h-[68px] w-[8px] bg-[black] origin-bottom"
+      ></div>
+      <div
+        id="longHand"
+        class="absolute bottom-[50%] left-[50%] -ml-[3px] h-[98px] w-[6px] bg-[black] origin-bottom"
+      ></div>
+      <div
+        id="longestHand"
+        class="absolute bottom-[50%] left-[50%] -ml-[1px] h-[116px] w-[2px] bg-[red] origin-bottom"
+      ></div>
+    </main>
+  </body>
+</html>
